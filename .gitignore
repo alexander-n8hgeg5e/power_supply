@@ -1,0 +1,5 @@
+*.bck
+*.sch-bak
+fp-info-cache*
+*-bak
+/*.kicad_pcb-bak

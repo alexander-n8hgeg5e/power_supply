@@ -1,0 +1,12 @@
+(module THTPad_backside_D2.2mm_Drill1.0mm (layer F.Cu) (tedit 5E4E5000)
+  (descr "THT pad as test Point, diameter 2.2mm, hole diameter 1.0mm")
+  (tags "THT pad")
+  (attr virtual)
+  (fp_text reference REF** (at 0 -0.2 unlocked) (layer B.SilkS) hide
+    (effects (font (size 0.1 0.1) (thickness 0.01)) (justify mirror))
+  )
+  (fp_text value THTPad_backside_D2.2mm_Drill1.0mm (at 0 2.05) (layer B.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 1) (layers B.Cu))
+)

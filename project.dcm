@@ -1,0 +1,141 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AM
+D Voltage source symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
+$CMP BC327
+D 0.8A Ic, 45V Vce, PNP Transistor, TO-92
+K PNP Transistor
+F http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF
+$ENDCMP
+#
+$CMP BC328
+D 0.8A Ic, 25V Vce, PNP Transistor, TO-92
+K PNP Transistor
+F http://www.redrok.com/PNP_BC327_-45V_-800mA_0.625W_Hfe100_TO-92.pdf
+$ENDCMP
+#
+$CMP BC337
+D 0.8A Ic, 45V Vce, NPN Transistor, TO-92
+K NPN Transistor
+F https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf
+$ENDCMP
+#
+$CMP BC338
+D 0.8A Ic, 25V Vce, NPN Transistor, TO-92
+K NPN Transistor
+F http://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337
+$ENDCMP
+#
+$CMP BC546
+D 0.1A Ic, 65V Vce, Small Signal NPN Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC547.pdf
+$ENDCMP
+#
+$CMP BC547B
+D 0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC547.pdf
+$ENDCMP
+#
+$CMP BC548
+D 0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC547.pdf
+$ENDCMP
+#
+$CMP BC549
+D 0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC547.pdf
+$ENDCMP
+#
+$CMP BC550
+D 0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/BC/BC547.pdf
+$ENDCMP
+#
+$CMP BC556
+D 0.1A Ic, 65V Vce, PNP Small Signal Transistor, TO-92
+K PNP Transistor
+F http://www.fairchildsemi.com/ds/BC/BC557.pdf
+$ENDCMP
+#
+$CMP BC557B
+D 0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92
+K PNP Transistor
+F http://www.fairchildsemi.com/ds/BC/BC557.pdf
+$ENDCMP
+#
+$CMP BC558
+D 0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92
+K PNP Transistor
+F http://www.fairchildsemi.com/ds/BC/BC557.pdf
+$ENDCMP
+#
+$CMP BC559
+D 0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92
+K PNP Transistor
+F http://www.fairchildsemi.com/ds/BC/BC557.pdf
+$ENDCMP
+#
+$CMP BC560
+D 0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92
+K PNP Transistor
+F http://www.fairchildsemi.com/ds/BC/BC557.pdf
+$ENDCMP
+#
+$CMP BUT11A
+D 5A Ic, 450V Vce, Silicon Power NPN Transistors, TO-220
+K High Voltage Power NPN Transistor
+F http://www.fairchildsemi.com/ds/BU/BUT11.pdf
+$ENDCMP
+#
+$CMP D_Zener
+D Zener diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP ISOURCE
+D Current source symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
+$CMP Q2SC3846
+D 6A Ic, 400V Vce, Silicon Power NPN Transistors, TO-220
+K High Voltage Power NPN Transistor
+F http://www.fairchildsemi.com/ds/BU/BUT11.pdf
+$ENDCMP
+#
+$CMP SW
+D Single Pole Single Throw (SPST) switch
+K switch lever
+F ~
+$ENDCMP
+#
+$CMP Transformer_1P_6S
+D Transformer, single primary, split secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP V
+D Voltage source symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
+$CMP VSOURCE
+D Voltage source symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
+#End Doc Library

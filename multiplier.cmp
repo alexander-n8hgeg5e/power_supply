@@ -1,0 +1,187 @@
+Cmp-Mod V01 Created by PcbNew   date = Fri 21 Feb 2020 02:24:33 AM CET
+
+BeginCmp
+TimeStamp = 5E4F2309
+Path = /5E52057B
+Reference = R10;
+ValeurCmp = R;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F35BF
+Path = /5E5209D8
+Reference = R9;
+ValeurCmp = R;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F0DC7
+Path = /5E5C406E/5E719E77/5E71C35A
+Reference = Q12;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F3C61
+Path = /5E62A529
+Reference = D5;
+ValeurCmp = 1N4007;
+IdModule  = Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F2377
+Path = /5E63430D
+Reference = D6;
+ValeurCmp = 1N4007;
+IdModule  = Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F4134
+Path = /5E62B250
+Reference = D7;
+ValeurCmp = 1N4007;
+IdModule  = Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F23A7
+Path = /5E64FCD6
+Reference = D8;
+ValeurCmp = 1N4007;
+IdModule  = Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F359B
+Path = /5E5C406E/5E719E77/5E5C65B9
+Reference = R12;
+ValeurCmp = 15K;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F30EC
+Path = /5E5C406E/5E719E77/5E71C323
+Reference = Q5;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F32A3
+Path = /5E5C406E/5E719E77/5E71C344
+Reference = Q13;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F362A
+Path = /5E5C406E/5E719E77/5E71C34A
+Reference = Q8;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F3660
+Path = /5E5C406E/5E719E77/5E71C317
+Reference = D4;
+ValeurCmp = D_Zener;
+IdModule  = Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F368E
+Path = /5E5C406E/5E719E77/5E71C31D
+Reference = R7;
+ValeurCmp = 10K;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F36E2
+Path = /5E5C406E/5E719E77/5E5C73F2
+Reference = R13;
+ValeurCmp = 5K;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F36B8
+Path = /5E5C406E/5E719E77/5E71C311
+Reference = R8;
+ValeurCmp = 10K;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F3207
+Path = /5E5C406E/5E719E77/5E71C372
+Reference = Q3;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F3195
+Path = /5E5C406E/5E719E77/5E71C2E8
+Reference = Q4;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F352B
+Path = /5E5C406E/5E719E77/5E71C361
+Reference = Q10;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F34B9
+Path = /5E5C406E/5E719E77/5E71C378
+Reference = Q6;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F34F2
+Path = /5E5C406E/5E719E77/5E71C2EE
+Reference = Q7;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F3564
+Path = /5E5C406E/5E719E77/5E71C351
+Reference = Q9;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F35DC
+Path = /5E5C406E/5E719E77/5E71C36A
+Reference = Q11;
+ValeurCmp = BC557;
+IdModule  = Package_TO_SOT_THT:TO-92L_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5E4F2419
+Path = /5E51FF6A
+Reference = U2;
+ValeurCmp = LM317_3PinPackage;
+IdModule  = Package_TO_SOT_THT:TO-220-3_Vertical;
+EndCmp
+
+EndListe

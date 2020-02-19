@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 0_power_supply)(type KiCad)(uri /var/src/electronic/power_supply/power_supply.pretty)(options "")(descr ""))
+)
