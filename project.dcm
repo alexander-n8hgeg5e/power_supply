@@ -1,5 +1,53 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 1N5401
+D 100V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5402
+D 200V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5403
+D 300V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5404
+D 400V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5405
+D 500V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5406
+D 600V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5407
+D 800V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
+$CMP 1N5408
+D 1000V 3A General Purpose Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88516/1n5400.pdf
+$ENDCMP
+#
 $CMP AM
 D Voltage source symbol for simulation only
 K simulation
@@ -90,16 +138,190 @@ K PNP Transistor
 F http://www.fairchildsemi.com/ds/BC/BC557.pdf
 $ENDCMP
 #
+$CMP BSB012NE2LXI
+D 170A Id, 25V Vds, 1.2mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSB012NE2LXI-DS-v02_01-EN.pdf?fileId=db3a30433f764301013f805e3eb247c1
+$ENDCMP
+#
+$CMP BSB013NE2LXI
+D 163A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSB013NE2LXI-DS-v02_04-en.pdf?fileId=db3a30432e398416012e47a158802577
+$ENDCMP
+#
+$CMP BSB014N04LX3
+D 180A Id, 40V Vds, 1.4mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSB014N04LX3G-DS-v02_03-en.pdf?fileId=db3a304320d39d590121a02c6c737a9b
+$ENDCMP
+#
+$CMP BSB015N04NX3
+D 180A Id, 40V Vds, 1.5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSB015N04NX3G-DS-v02_04-en.pdf?fileId=db3a304320d39d590121a03bbfcd7aac
+$ENDCMP
+#
 $CMP BUT11A
 D 5A Ic, 450V Vce, Silicon Power NPN Transistors, TO-220
 K High Voltage Power NPN Transistor
 F http://www.fairchildsemi.com/ds/BU/BUT11.pdf
 $ENDCMP
 #
+$CMP C
+D Capacitor symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
 $CMP D_Zener
 D Zener diode
 K diode
 F ~
+$ENDCMP
+#
+$CMP IRF6616
+D 19A Id, 40V Vds, 5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6616pbf.pdf?fileId=5546d462533600a4015355e843461a13
+$ENDCMP
+#
+$CMP IRF6620
+D 150A Id, 20V Vds, 2.7mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6620pbf.pdf?fileId=5546d462533600a4015355e8831d1a23
+$ENDCMP
+#
+$CMP IRF6628
+D 27A Id, 25V Vds, 2.5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6628pbf.pdf?fileId=5546d462533600a4015355e8c0d71a33
+$ENDCMP
+#
+$CMP IRF6635
+D 32A Id, 30V Vds, 1.8mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6635pbf.pdf?fileId=5546d462533600a4015355e8e7ab1a3d
+$ENDCMP
+#
+$CMP IRF6714M
+D 29A Id, 25V Vds, 2.1mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6714mpbf.pdf?fileId=5546d462533600a4015355ed04be1a80
+$ENDCMP
+#
+$CMP IRF6715M
+D 34A Id, 25V Vds, 1.6mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6715mpbf.pdf?fileId=5546d462533600a4015355ed0d221a82
+$ENDCMP
+#
+$CMP IRF6716M
+D 39A Id, 25V Vds, 1.6mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6716mpbf.pdf?fileId=5546d462533600a4015355ed15241a84
+$ENDCMP
+#
+$CMP IRF6717M
+D 38A Id, 25V Vds, 1.25mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6717mpbf.pdf?fileId=5546d462533600a4015355ed1d801a86
+$ENDCMP
+#
+$CMP IRF6724M
+D 27A Id, 30V Vds, 2.5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6724mpbf.pdf?fileId=5546d462533600a4015355ed51a01a94
+$ENDCMP
+#
+$CMP IRF6725M
+D 28A Id, 30V Vds, 2.2mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6725mpbf.pdf?fileId=5546d462533600a4015355ed59ca1a96
+$ENDCMP
+#
+$CMP IRF6727M
+D 32A Id, 30V Vds, 1.7mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6727mpbf.pdf?fileId=5546d462533600a4015355ed6a331a9a
+$ENDCMP
+#
+$CMP IRF6728M
+D 23A Id, 30V Vds, 2.5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6728mpbf.pdf?fileId=5546d462533600a4015355ed73701a9c
+$ENDCMP
+#
+$CMP IRF6795M
+D 32A Id, 25V Vds, 1.8mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6795mpbf.pdf?fileId=5546d462533600a4015355ed99cd1aa6
+$ENDCMP
+#
+$CMP IRF6797M
+D 36A Id, 25V Vds, 1.4mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6797mpbf.pdf?fileId=5546d462533600a4015355eda2091aa9
+$ENDCMP
+#
+$CMP IRF6798M
+D 37A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6798mpbf.pdf?fileId=5546d462533600a4015355edaa4b1aab
+$ENDCMP
+#
+$CMP IRF6893M
+D 29A Id, 25V Vds, 1.6mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6893mpbf.pdf?fileId=5546d462533600a4015355f0c3de1aba
+$ENDCMP
+#
+$CMP IRF6894M
+D 37A Id, 25V Vds, 1.3mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-IRF6894M-DS-v02_00-EN.pdf?fileId=5546d462533600a4015355f0cc041abc
+$ENDCMP
+#
+$CMP IRF6898M
+D 35A Id, 25V Vds, 1.1mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf6898mpbf.pdf?fileId=5546d462533600a4015355f0d4611abe
+$ENDCMP
+#
+$CMP IRF7946
+D 198A Id, 40V Vds, 1.4mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf7946pbf.pdf?fileId=5546d462533600a40153560cc0a41d43
+$ENDCMP
+#
+$CMP IRF8302M
+D 31A Id, 30V Vds, 1.8mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf8302mpbf.pdf?fileId=5546d462533600a40153560d16e41d5b
+$ENDCMP
+#
+$CMP IRF8304M
+D 28A Id, 30V Vds, 2.2mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf8304mpbf.pdf?fileId=5546d462533600a40153560d20db1d5d
+$ENDCMP
+#
+$CMP IRF8306M
+D 23A Id, 30V Vds, 2.5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf8306mpbf.pdf?fileId=5546d462533600a40153560d29371d5f
+$ENDCMP
+#
+$CMP IRF8308M
+D 27A Id, 30V Vds, 2.5mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61
+$ENDCMP
+#
+$CMP IRFZ34N
+D 180A Id, 25V Vds, 0.8mOhm Rds, N-Channel MOSFET, DirectFET MX
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-BSB008NE2LX-DS-v02_00-EN.pdf?fileId=db3a30432e564707012e5745ca7d000e
 $ENDCMP
 #
 $CMP ISOURCE
@@ -126,6 +348,60 @@ K transformer coil magnet
 F ~
 $ENDCMP
 #
+$CMP UF5400
+D 50V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5401
+D 100V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5402
+D 200V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5403
+D 300V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5404
+D 400V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5405
+D 500V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5406
+D 600V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5407
+D 800V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
+$CMP UF5408
+D 1000V 3A Soft Recovery Ultrafast Rectifier Diode, DO-201AD
+K diode
+F http://www.vishay.com/docs/88756/uf5400.pdf
+$ENDCMP
+#
 $CMP V
 D Voltage source symbol for simulation only
 K simulation
@@ -134,6 +410,12 @@ $ENDCMP
 #
 $CMP VSOURCE
 D Voltage source symbol for simulation only
+K simulation
+F ~
+$ENDCMP
+#
+$CMP elko
+D Capacitor symbol for simulation only
 K simulation
 F ~
 $ENDCMP

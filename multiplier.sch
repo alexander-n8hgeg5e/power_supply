@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -424,11 +424,11 @@ Text Notes 8125 2475 0    50   ~ 0
 power transistor\n
 Text GLabel 7050 2875 0    50   UnSpc ~ 0
 SI0_B
-Text GLabel 8475 2675 0    50   UnSpc ~ 0
+Text GLabel 8475 2625 0    50   UnSpc ~ 0
 SI0_C
-Text GLabel 8475 3075 0    50   UnSpc ~ 0
+Text GLabel 8450 3075 0    50   UnSpc ~ 0
 SI0_E
-Text GLabel 10625 5325 1    50   UnSpc ~ 0
+Text GLabel 4400 6650 2    50   UnSpc ~ 0
 SI0_+15V
 $Comp
 L pspice:0 #GND01
@@ -442,15 +442,13 @@ F 3 "~" H 10050 5725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10625 5725 10625 5625
-Wire Wire Line
 	1075 3375 1075 3500
 $Comp
-L 0_project:D_Zener D4
+L 0_project:D_Zener Z4
 U 1 1 5E71C317
 P 1075 3750
-F 0 "D4" V 1029 3829 50  0000 L CNN
-F 1 "D_Zener" H 1075 3650 50  0001 C CNN
+F 0 "Z4" V 1075 3825 50  0000 L CNN
+F 1 "5V" V 1075 3650 50  0000 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 1075 3750 50  0001 C CNN
 F 3 "~" H 1075 3750 50  0001 C CNN
 F 4 "/var/src/electronic/spice/spice-lib/zener.lib" H 1075 3850 50  0001 C CNN "Spice_Lib_File"
@@ -495,25 +493,10 @@ F 6 "R" H 10600 3100 50  0001 C CNN "Spice_Primitive"
 	1    10600 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L 0_project:BC547B Q20
-U 1 1 5E702FD7
-P 10500 3450
-F 0 "Q20" H 10691 3496 50  0000 L CNN
-F 1 "BC547B" H 10691 3405 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10700 3375 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 10500 3450 50  0001 L CNN
-F 4 "Q" H 10700 3525 50  0001 L CNN "Spice_Primitive"
-F 5 "BC547B" H 10700 3525 50  0001 L CNN "Spice_Model"
-F 6 "Y" H 10700 3525 50  0001 L CNN "Spice_Netlist_Enabled"
-F 7 "/code/electronic/spice_lib/bjt.lib" H 10700 3525 50  0001 L CNN "Spice_Lib_File"
-	1    10500 3450
-	1    0    0    -1  
-$EndComp
 Text GLabel 10600 2950 1    50   UnSpc ~ 0
 SI0_+15V
 Text Notes 8725 1375 0    50   ~ 0
-.options SAVECURRENTS TRTOL=1\n.tran 200u 5\n*.dc V3 0 20 2\n.print time
+.options SAVECURRENTS TRTOL=1\n.tran 10u 5\n*.dc V3 0 20 2\n.print time
 $Comp
 L Device:R R12
 U 1 1 5E5C65B9
@@ -535,7 +518,7 @@ SI0_F+
 Wire Wire Line
 	10600 3650 10600 3950
 Wire Wire Line
-	9900 3950 10600 3950
+	9900 3950 10300 3950
 Wire Wire Line
 	9900 3450 9975 3450
 Connection ~ 9900 3450
@@ -928,7 +911,7 @@ $Comp
 L 0_project:AM IC_0
 U 1 1 5E6D3AA3
 P 9425 5050
-F 0 "IC_0" H 9150 4925 50  0000 R CNN
+F 0 "IC_0" H 9250 4950 50  0000 R CNN
 F 1 "VSOURCE" H 9059 5078 50  0001 R CNN
 F 2 "" H 9425 5050 50  0001 C CNN
 F 3 "~" H 9425 5050 50  0001 C CNN
@@ -971,7 +954,7 @@ F 1 "VSOURCE" H 6078 6030 50  0001 L CNN
 F 2 "" H 5850 6075 50  0001 C CNN
 F 3 "~" H 5850 6075 50  0001 C CNN
 F 4 "V" H 5850 6075 50  0001 C CNN "Spice_Primitive"
-F 5 "N" H 8375 5650 50  0000 C CNN "Spice_Netlist_Enabled"
+F 5 "Y" H 8375 5650 50  0000 C CNN "Spice_Netlist_Enabled"
 F 6 "dc 0 ac 0 pwl(0  20 0.1 20 3 20 3.1 2 5 2)" H 7350 5650 50  0000 C CNN "Spice_Model"
 	1    5850 6075
 	-1   0    0    1   
@@ -985,7 +968,7 @@ F 1 "VSOURCE" H 6953 5980 50  0001 L CNN
 F 2 "" H 6725 6025 50  0001 C CNN
 F 3 "~" H 6725 6025 50  0001 C CNN
 F 4 "V" H 6725 6025 50  0001 C CNN "Spice_Primitive"
-F 5 "Y" H 10125 5575 50  0000 C CNN "Spice_Netlist_Enabled"
+F 5 "N" H 10125 5575 50  0000 C CNN "Spice_Netlist_Enabled"
 F 6 "dc 0 ac 0 pwl(0 20 0.1 20  2 20  5 2)" H 9200 5575 50  0000 C CNN "Spice_Model"
 	1    6725 6025
 	-1   0    0    1   
@@ -1009,7 +992,7 @@ F 1 "VSOURCE" H 7428 4805 50  0001 L CNN
 F 2 "" H 7200 4850 50  0001 C CNN
 F 3 "~" H 7200 4850 50  0001 C CNN
 F 4 "I" H 7200 4850 50  0001 C CNN "Spice_Primitive"
-F 5 "Y" H 3375 4625 50  0000 C CNN "Spice_Netlist_Enabled"
+F 5 "N" H 3375 4625 50  0000 C CNN "Spice_Netlist_Enabled"
 F 6 "dc 0 ac 0 pwl(0 10m 0.1 10m  2 500m  5 500m)" H 3625 4625 50  0000 L CNN "Spice_Model"
 	1    7200 4850
 	1    0    0    -1  
@@ -1018,7 +1001,7 @@ $Comp
 L 0_project:V S_VC_0
 U 1 1 5E6E7719
 P 9425 5475
-F 0 "S_VC_0" H 9653 5521 50  0000 L CNN
+F 0 "S_VC_0" H 9050 5325 50  0000 L CNN
 F 1 "VSOURCE" H 9653 5430 50  0001 L CNN
 F 2 "" H 9425 5475 50  0001 C CNN
 F 3 "~" H 9425 5475 50  0001 C CNN
@@ -1026,20 +1009,6 @@ F 4 "V" H 9425 5475 50  0001 C CNN "Spice_Primitive"
 F 5 "Y" H 9425 5475 50  0001 C CNN "Spice_Netlist_Enabled"
 F 6 "dc 0 ac 0 pwl( 0 25 6 25)" H 8875 4675 50  0000 L CNN "Spice_Model"
 	1    9425 5475
-	-1   0    0    1   
-$EndComp
-$Comp
-L 0_project:V V3
-U 1 1 5E75498C
-P 10625 5475
-F 0 "V3" H 10853 5521 50  0000 L CNN
-F 1 "VSOURCE" H 10853 5430 50  0001 L CNN
-F 2 "" H 10625 5475 50  0001 C CNN
-F 3 "~" H 10625 5475 50  0001 C CNN
-F 4 "V" H 10625 5475 50  0001 C CNN "Spice_Primitive"
-F 5 "Y" H 10625 5475 50  0001 C CNN "Spice_Netlist_Enabled"
-F 6 "dc 0 ac 0 pwl(0 15 5 15)" H 10725 4875 50  0000 C CNN "Spice_Model"
-	1    10625 5475
 	-1   0    0    1   
 $EndComp
 Text GLabel 850  6150 0    50   UnSpc ~ 0
@@ -1052,16 +1021,13 @@ Text GLabel 5850 6550 0    50   UnSpc ~ 0
 0
 Text Notes 6450 5250 0    50   ~ 0
 base control [A]
-Text Notes 10950 4800 2    50   ~ 0
+Text Notes 3825 6275 2    50   ~ 0
 fan control PSU\n
 Text Notes 9775 4575 2    50   ~ 0
 collector loading
 Connection ~ 9425 5725
 Wire Wire Line
 	9425 5725 9875 5725
-Connection ~ 10050 5725
-Wire Wire Line
-	10050 5725 10625 5725
 Text GLabel 9875 5850 2    50   UnSpc ~ 0
 0
 Wire Wire Line
@@ -1129,7 +1095,7 @@ F 1 "VSOURCE" H 6528 4880 50  0001 L CNN
 F 2 "" H 6300 4925 50  0001 C CNN
 F 3 "~" H 6300 4925 50  0001 C CNN
 F 4 "I" H 6300 4925 50  0001 C CNN "Spice_Primitive"
-F 5 "N" H 3375 4700 50  0000 C CNN "Spice_Netlist_Enabled"
+F 5 "Y" H 3375 4700 50  0000 C CNN "Spice_Netlist_Enabled"
 F 6 "dc 0 ac 0 pwl(0 10m 0.1 10m  3 500m  3.1 0  5 500m)" H 3625 4675 50  0000 L CNN "Spice_Model"
 	1    6300 4925
 	1    0    0    -1  
@@ -1180,4 +1146,157 @@ Wire Notes Line
 	3050 4875 5900 4875
 Wire Notes Line
 	3050 5000 5900 5000
+$Comp
+L 0_project:1N5401 D3
+U 1 1 5E8E6C8B
+P 3800 6650
+F 0 "D3" H 3800 6475 50  0000 C CNN
+F 1 "1N5401" H 3800 6161 50  0001 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3800 6475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3800 6650 50  0001 C CNN
+F 4 "/var/src/electronic/spice_lib/diode.lib" H 3800 6252 50  0001 C CNN "Spice_Lib_File"
+F 5 "1N5401" H 3800 6550 50  0000 C CNN "Spice_Model"
+F 6 "Y" H 3800 6434 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 3800 6525 50  0001 C CNN "Spice_Primitive"
+	1    3800 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 0_project:1N5401 D1
+U 1 1 5E8E92FD
+P 3350 6800
+F 0 "D1" V 3250 6650 50  0000 L CNN
+F 1 "1N5400" V 3213 6879 50  0001 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3350 6625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3350 6800 50  0001 C CNN
+F 4 "/var/src/electronic/spice_lib/diode.lib" V 3304 6879 50  0001 L CNN "Spice_Lib_File"
+F 5 "1N5401" V 3325 6450 50  0000 L CNN "Spice_Model"
+F 6 "Y" V 3486 6879 50  0001 L CNN "Spice_Netlist_Enabled"
+F 7 "D" V 3577 6879 50  0001 L CNN "Spice_Primitive"
+	1    3350 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L 0_project:1N5401 D2
+U 1 1 5E8EDED3
+P 3500 6950
+F 0 "D2" H 3500 7050 50  0000 C CNN
+F 1 "1N5400" H 3500 6461 50  0001 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3500 6775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3500 6950 50  0001 C CNN
+F 4 "/var/src/electronic/spice_lib/diode.lib" H 3500 6552 50  0001 C CNN "Spice_Lib_File"
+F 5 "1N5401" H 3450 7000 50  0000 C CNN "Spice_Model"
+F 6 "Y" H 3500 6734 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 3500 6825 50  0001 C CNN "Spice_Primitive"
+	1    3500 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L 0_project:1N5401 D5
+U 1 1 5E8EE8A6
+P 3950 6800
+F 0 "D5" V 3904 6879 50  0000 L CNN
+F 1 "1N5400" V 3995 6879 50  0001 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3950 6625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3950 6800 50  0001 C CNN
+F 4 "D" H 3950 6800 50  0001 C CNN "Spice_Primitive"
+F 5 "D1N5401" V 4000 7025 50  0000 C CNN "Spice_Model"
+F 6 "Y" H 3950 6800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/var/src/electronic/spice_lib/diode.lib" H 3950 6800 50  0001 C CNN "Spice_Lib_File"
+	1    3950 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L 0_project:V V3
+U 1 1 5E75498C
+P 3650 6800
+F 0 "V3" H 3725 6700 50  0000 L CNN
+F 1 "VSOURCE" H 3878 6755 50  0001 L CNN
+F 2 "" H 3650 6800 50  0001 C CNN
+F 3 "~" H 3650 6800 50  0001 C CNN
+F 4 "V" H 3650 6800 50  0001 C CNN "Spice_Primitive"
+F 5 "Y" H 3650 6800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 6 "dc 0 ac 0 0 sin(0 15 60 0 0)" H 3500 6325 50  0000 C CNN "Spice_Model"
+	1    3650 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 6950 3650 6950
+Connection ~ 3650 6950
+Wire Wire Line
+	3650 6650 3350 6650
+Connection ~ 3650 6650
+Text GLabel 3350 6950 0    50   UnSpc ~ 0
+0
+$Comp
+L 0_project:IRFZ34N Q1
+U 1 1 5E95BF21
+P 10500 3450
+F 0 "Q1" H 10704 3496 50  0000 L CNN
+F 1 "IRFZ34N" H 10700 3450 50  0001 L CNN
+F 2 "Package_DirectFET:DirectFET_MX" H 10500 3450 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSB008NE2LX-DS-v02_00-EN.pdf?fileId=db3a30432e564707012e5745ca7d000e" H 10500 3450 50  0001 L CNN
+F 4 "M" H 10700 3525 50  0001 L CNN "Spice_Primitive"
+F 5 "IRFZ34N" H 10704 3405 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 10700 3525 50  0001 L CNN "Spice_Netlist_Enabled"
+F 7 "/var/src/electronic/spice/spice_lib/mosfet.lib" H 10700 3525 50  0001 L CNN "Spice_Lib_File"
+	1    10500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E95EB50
+P 10300 3700
+F 0 "R1" H 10370 3746 50  0000 L CNN
+F 1 "0" H 10370 3655 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 10230 3700 50  0001 C CNN
+F 3 "~" H 10300 3700 50  0001 C CNN
+F 4 "Y" H 10300 3700 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "50k" H 10400 3675 50  0000 C CNN "Spice_Model"
+F 6 "R" H 10300 3700 50  0001 C CNN "Spice_Primitive"
+	1    10300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3550 10300 3450
+Wire Wire Line
+	10300 3850 10300 3950
+Connection ~ 10300 3950
+Wire Wire Line
+	10300 3950 10600 3950
+Connection ~ 10300 3450
+$Comp
+L 0_project:elko C1
+U 1 1 5E97ABBD
+P 4150 7275
+F 0 "C1" V 3950 7275 50  0000 C CNN
+F 1 "elko" V 4250 7125 50  0001 C CNN
+F 2 "" H 4150 7275 50  0001 C CNN
+F 3 "~" H 4150 7275 50  0001 C CNN
+F 4 "X" V 4250 7425 50  0001 C CNN "Spice_Primitive"
+F 5 "elko_1u_leaky" V 4350 7275 50  0000 C CNN "Spice_Model"
+F 6 "Y" V 4250 7425 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/var/src/electronic/spice_lib/elko.lib" V 4250 7425 50  0001 C CNN "Spice_Lib_File"
+	1    4150 7275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 7275 3350 7275
+Wire Wire Line
+	3350 7275 3350 6950
+Connection ~ 3350 6950
+Wire Wire Line
+	4400 7275 4400 6650
+Wire Wire Line
+	4400 6650 3950 6650
+Connection ~ 3950 6650
+NoConn ~ 6875 4450
+NoConn ~ 6875 4400
+NoConn ~ 5000 4975
+NoConn ~ 5350 4700
+NoConn ~ 4450 4675
+Wire Wire Line
+	8450 3075 8475 3075
+Wire Wire Line
+	8475 2625 8475 2675
 $EndSCHEMATC
