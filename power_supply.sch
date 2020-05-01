@@ -548,15 +548,15 @@ F 4 "N" H 5950 1725 50  0001 C CNN "Spice_Netlist_Enabled"
 	0    -1   -1   0   
 $EndComp
 $Sheet
-S 4525 4150 975  1750
+S 1625 4500 975  1750
 U 5E5C406E
 F0 "fan_control" 50
 F1 "fan_control.sch" 50
-F2 "GND" I L 4525 5200 50 
-F3 "C" I L 4525 4575 50 
-F4 "B" I L 4525 4700 50 
-F5 "E" I L 4525 4850 50 
-F6 "+15V" I L 4525 4350 50 
+F2 "C" I L 1625 4925 50 
+F3 "B" I L 1625 5050 50 
+F4 "E" I L 1625 5200 50 
+F5 "+15VAC" I L 1625 5450 50 
+F6 "0VAC" I L 1625 4700 50 
 $EndSheet
 NoConn ~ 2175 2125
 NoConn ~ 2175 2825
@@ -594,71 +594,11 @@ F 3 "" H 1850 3925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 2525 1400 4900
+	1400 2525 1400 5450
 Connection ~ 1400 2525
-Wire Wire Line
-	1500 1925 1500 4200
 Connection ~ 1500 1925
 Wire Wire Line
 	1500 1925 1600 1925
-Wire Wire Line
-	1700 4350 2450 4350
-Wire Wire Line
-	2000 4200 1500 4200
-Wire Wire Line
-	1700 4350 1700 4900
-$Comp
-L Regulator_Linear:LM317_3PinPackage U2
-U 1 1 5E51FF6A
-P 2750 4350
-F 0 "U2" H 2750 4592 50  0000 C CNN
-F 1 "LM317_3PinPackage" H 2750 4501 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2750 4600 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 2750 4350 50  0001 C CNN
-F 4 "N" H 2750 4350 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    2750 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5E52057B
-P 3175 4950
-F 0 "R10" V 3075 4925 50  0000 C CNN
-F 1 "R" V 3175 4950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3105 4950 50  0001 C CNN
-F 3 "~" H 3175 4950 50  0001 C CNN
-F 4 "N" H 3175 4950 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    3175 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 4350 3175 4350
-Wire Wire Line
-	3175 4750 2750 4750
-Wire Wire Line
-	2750 4750 2750 4650
-Wire Wire Line
-	3175 5100 3175 5200
-Connection ~ 3175 4750
-Wire Wire Line
-	3175 4750 3175 4800
-Wire Wire Line
-	3175 4350 3175 4400
-Wire Wire Line
-	3175 4750 3175 4700
-$Comp
-L Device:R R9
-U 1 1 5E5209D8
-P 3175 4550
-F 0 "R9" V 3075 4525 50  0000 C CNN
-F 1 "R" V 3175 4575 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3105 4550 50  0001 C CNN
-F 3 "~" H 3175 4550 50  0001 C CNN
-F 4 "N" H 3175 4550 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    3175 4550
-	-1   0    0    1   
-$EndComp
-Connection ~ 3175 4350
 Text GLabel 6200 1625 1    50   Output ~ 0
 E
 Text GLabel 5675 1625 1    50   Output ~ 0
@@ -696,16 +636,12 @@ Wire Wire Line
 	7200 3075 5550 3075
 Wire Wire Line
 	4100 3075 4550 3075
-Text GLabel 4525 4575 0    50   Input ~ 0
+Text GLabel 1625 4925 0    50   Input ~ 0
 C
-Text GLabel 4525 4700 0    50   Input ~ 0
+Text GLabel 1625 5050 0    50   Input ~ 0
 B
-Text GLabel 4525 4850 0    50   Input ~ 0
+Text GLabel 1625 5200 0    50   Input ~ 0
 E
-Wire Wire Line
-	3175 5200 4525 5200
-Wire Wire Line
-	3175 4350 4525 4350
 Wire Wire Line
 	9375 3075 10800 3075
 Connection ~ 9375 3075
@@ -733,77 +669,10 @@ F 4 "N" H 11000 2200 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    11000 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Diode:1N4007 D5
-U 1 1 5E62A529
-P 1550 4900
-F 0 "D5" H 1550 4684 50  0000 C CNN
-F 1 "1N4007" H 1550 4775 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 1550 4725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1550 4900 50  0001 C CNN
-F 4 "N" H 1550 4900 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    1550 4900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:1N4007 D7
-U 1 1 5E62B250
-P 1850 4900
-F 0 "D7" H 1850 5116 50  0000 C CNN
-F 1 "1N4007" H 1850 5025 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 1850 4725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1850 4900 50  0001 C CNN
-F 4 "D" H 1850 4900 50  0001 C CNN "Spice_Primitive"
-F 5 "1N4007" H 1850 4900 50  0001 C CNN "Spice_Model"
-F 6 "N" H 1850 4900 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    1850 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4007 D6
-U 1 1 5E63430D
-P 1550 5125
-F 0 "D6" H 1550 5341 50  0000 C CNN
-F 1 "1N4007" H 1550 5250 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 1550 4950 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1550 5125 50  0001 C CNN
-F 4 "N" H 1550 5125 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    1550 5125
-	1    0    0    -1  
-$EndComp
-Connection ~ 1700 4900
-$Comp
-L Diode:1N4007 D8
-U 1 1 5E64FCD6
-P 1850 5125
-F 0 "D8" H 1850 4909 50  0000 C CNN
-F 1 "1N4007" H 1850 5000 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 1850 4950 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1850 5125 50  0001 C CNN
-F 4 "N" H 1850 5125 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    1850 5125
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	2000 4200 2000 4900
-Connection ~ 2000 4900
+	1400 5450 1625 5450
 Wire Wire Line
-	2000 4900 2000 5125
+	1625 4700 1500 4700
 Wire Wire Line
-	1400 4900 1400 5125
-Connection ~ 1400 4900
-Wire Wire Line
-	1700 5125 1700 5200
-Wire Wire Line
-	1700 5200 3175 5200
-Connection ~ 3175 5200
-Connection ~ 1700 5125
-Wire Notes Line
-	2250 4025 2250 5400
-Wire Notes Line
-	2250 5400 3500 5400
-Wire Notes Line
-	3500 5400 3500 4025
-Wire Notes Line
-	3500 4025 2250 4025
+	1500 1925 1500 4700
 $EndSCHEMATC
