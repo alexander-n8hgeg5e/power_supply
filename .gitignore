@@ -5,3 +5,4 @@ fp-info-cache*
 /*.kicad_pcb-bak
 fan_control.xml
 __pycache__/**
+_autosave-fan_control.kicad_pcb
