@@ -48,13 +48,13 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5EB4ABA5
-P 3250 4625
-F 0 "R3" V 3150 4600 50  0000 C CNN
-F 1 "R" V 3250 4625 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3180 4625 50  0001 C CNN
-F 3 "~" H 3250 4625 50  0001 C CNN
-F 4 "N" H 3250 4625 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    3250 4625
+P 3250 4650
+F 0 "R3" V 3150 4625 50  0000 C CNN
+F 1 "R" V 3250 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3180 4650 50  0001 C CNN
+F 3 "~" H 3250 4650 50  0001 C CNN
+F 4 "N" H 3250 4650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3250 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -64,10 +64,10 @@ Wire Wire Line
 Wire Wire Line
 	2825 4425 2825 4325
 Wire Wire Line
-	3250 4775 3250 4875
+	3250 4800 3250 4875
 Connection ~ 3250 4425
 Wire Wire Line
-	3250 4425 3250 4475
+	3250 4425 3250 4500
 Wire Wire Line
 	3250 4025 3250 4075
 Wire Wire Line
@@ -76,7 +76,7 @@ $Comp
 L Device:R R2
 U 1 1 5EB4ABB4
 P 3250 4225
-F 0 "R2" V 3150 4200 50  0000 C CNN
+F 0 "R2" V 3350 4225 50  0000 C CNN
 F 1 "R" V 3250 4250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3180 4225 50  0001 C CNN
 F 3 "~" H 3250 4225 50  0001 C CNN
@@ -86,15 +86,15 @@ F 4 "N" H 3250 4225 50  0001 C CNN "Spice_Netlist_Enabled"
 $EndComp
 Connection ~ 3250 4025
 Wire Wire Line
-	3250 4875 3500 4875
+	3250 4875 3475 4875
 Wire Wire Line
-	3250 4025 3500 4025
+	3250 4025 3475 4025
 Wire Wire Line
 	1400 4875 3250 4875
 Connection ~ 3250 4875
-Text GLabel 3500 4025 2    50   Input ~ 0
+Text GLabel 3775 4025 2    50   Input ~ 0
 +15V
-Text GLabel 3500 4875 2    50   Input ~ 0
+Text GLabel 3800 4875 2    50   Input ~ 0
 FGND
 Text HLabel 1350 3700 1    50   Input ~ 0
 +15VAC
@@ -363,4 +363,45 @@ Text GLabel 5725 3950 0    50   Input ~ 0
 0VAC
 Text GLabel 1800 1525 2    50   Input ~ 0
 F+
+Wire Wire Line
+	3250 4425 3475 4425
+$Comp
+L Device:R R4
+U 1 1 5EC4696D
+P 3475 4225
+F 0 "R4" V 3375 4200 50  0000 C CNN
+F 1 "R" V 3475 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3405 4225 50  0001 C CNN
+F 3 "~" H 3475 4225 50  0001 C CNN
+F 4 "N" H 3475 4225 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3475 4225
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5EC46A56
+P 3475 4650
+F 0 "R6" V 3575 4650 50  0000 C CNN
+F 1 "R" V 3475 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3405 4650 50  0001 C CNN
+F 3 "~" H 3475 4650 50  0001 C CNN
+F 4 "N" H 3475 4650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3475 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 4500 3475 4425
+Connection ~ 3475 4425
+Wire Wire Line
+	3475 4425 3475 4375
+Wire Wire Line
+	3475 4075 3475 4025
+Connection ~ 3475 4025
+Wire Wire Line
+	3475 4025 3775 4025
+Wire Wire Line
+	3475 4800 3475 4875
+Connection ~ 3475 4875
+Wire Wire Line
+	3475 4875 3800 4875
 $EndSCHEMATC

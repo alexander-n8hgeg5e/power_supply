@@ -298,8 +298,6 @@ Wire Wire Line
 	1075 4075 1525 4075
 Text Notes 3950 2250 2    50   ~ 0
 gilbert cell max input voltage:\n15V - 4 * Vbe = aprox 11V
-Wire Wire Line
-	700  7025 675  7025
 Text Notes 1725 3925 0    50   ~ 0
 adj.\nhere
 $Comp
@@ -346,13 +344,13 @@ Text GLabel 850  4875 1    50   UnSpc ~ 0
 SI_B
 Text GLabel 1250 7325 3    50   UnSpc ~ 0
 SI_C
-Text GLabel 1725 4850 1    50   UnSpc ~ 0
+Text GLabel 1725 4750 1    50   UnSpc ~ 0
 SI_E
 Text GLabel 9425 4800 2    50   UnSpc ~ 0
 SI0_C
 Wire Wire Line
 	9425 5725 9425 5625
-Text GLabel 2075 4850 1    50   UnSpc ~ 0
+Text GLabel 2075 4775 1    50   UnSpc ~ 0
 SI_GND
 Text GLabel 1175 4900 1    50   UnSpc ~ 0
 SI_GND
@@ -492,7 +490,7 @@ F 1 "150k" H 1320 7130 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1180 7175 50  0001 C CNN
 F 3 "~" H 1250 7175 50  0001 C CNN
 F 4 "Y" H 1250 7175 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "10K" H 1125 7125 50  0000 C CNN "Spice_Model"
+F 5 "20K" H 1125 7125 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1250 7175 50  0001 C CNN "Spice_Primitive"
 	1    1250 7175
 	-1   0    0    1   
@@ -590,12 +588,12 @@ $Comp
 L Device:R R25
 U 1 1 5E56928A
 P 1175 5050
-F 0 "R25" H 1245 5096 50  0000 L CNN
+F 0 "R25" H 1225 5325 50  0000 L CNN
 F 1 "100K" H 1245 5005 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1105 5050 50  0001 C CNN
 F 3 "~" H 1175 5050 50  0001 C CNN
 F 4 "Y" H 1175 5050 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "2.5k" H 1325 5000 50  0000 C CNN "Spice_Model"
+F 5 "5k" H 1200 5100 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1175 5050 50  0001 C CNN "Spice_Primitive"
 	1    1175 5050
 	1    0    0    -1  
@@ -609,7 +607,7 @@ F 1 "50k" H 945 7130 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 805 7175 50  0001 C CNN
 F 3 "~" H 875 7175 50  0001 C CNN
 F 4 "Y" H 875 7175 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "2.5k" H 1025 7125 50  0000 C CNN "Spice_Model"
+F 5 "5k" H 1025 7125 50  0000 C CNN "Spice_Model"
 F 6 "R" H 875 7175 50  0001 C CNN "Spice_Primitive"
 	1    875  7175
 	-1   0    0    1   
@@ -620,12 +618,12 @@ $Comp
 L Device:R R24
 U 1 1 5E569284
 P 850 5025
-F 0 "R24" H 920 5071 50  0000 L CNN
+F 0 "R24" H 600 5175 50  0000 L CNN
 F 1 "300K" H 920 4980 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 780 5025 50  0001 C CNN
 F 3 "~" H 850 5025 50  0001 C CNN
 F 4 "Y" H 850 5025 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "10k" H 1025 5000 50  0000 C CNN "Spice_Model"
+F 5 "20k" H 875 5050 50  0000 C CNN "Spice_Model"
 F 6 "R" H 850 5025 50  0001 C CNN "Spice_Primitive"
 	1    850  5025
 	1    0    0    -1  
@@ -639,7 +637,7 @@ F 1 "50K" H 2145 4955 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2005 5000 50  0001 C CNN
 F 3 "~" H 2075 5000 50  0001 C CNN
 F 4 "Y" H 2075 5000 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "2.5k" H 2225 4950 50  0000 C CNN "Spice_Model"
+F 5 "5k" H 2225 4950 50  0000 C CNN "Spice_Model"
 F 6 "R" H 2075 5000 50  0001 C CNN "Spice_Primitive"
 	1    2075 5000
 	1    0    0    -1  
@@ -654,7 +652,7 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1655 5000 50
 F 3 "~" H 1725 5000 50  0001 C CNN
 F 4 "Y" H 1725 5000 50  0001 C CNN "Spice_Netlist_Enabled"
 F 5 "R" H 1725 5000 50  0001 C CNN "Spice_Primitive"
-F 6 "10k" H 1875 4975 50  0000 C CNN "Spice_Model"
+F 6 "20k" H 1875 4975 50  0000 C CNN "Spice_Model"
 	1    1725 5000
 	1    0    0    -1  
 $EndComp
@@ -673,7 +671,7 @@ F 1 "50K" H 1770 7180 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1630 7225 50  0001 C CNN
 F 3 "~" H 1700 7225 50  0001 C CNN
 F 4 "Y" H 1700 7225 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "2.5k" H 1850 7175 50  0000 C CNN "Spice_Model"
+F 5 "5k" H 1850 7175 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1700 7225 50  0001 C CNN "Spice_Primitive"
 	1    1700 7225
 	1    0    0    -1  
@@ -688,14 +686,14 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2105 7225 50
 F 3 "~" H 2175 7225 50  0001 C CNN
 F 4 "Y" H 2175 7225 50  0001 C CNN "Spice_Netlist_Enabled"
 F 5 "R" H 2175 7225 50  0001 C CNN "Spice_Primitive"
-F 6 "10k" H 2050 7200 50  0000 C CNN "Spice_Model"
+F 6 "20k" H 2050 7200 50  0000 C CNN "Spice_Model"
 	1    2175 7225
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4125 3000 4250 3000
 Wire Wire Line
-	1950 7075 1700 7075
+	1950 7075 1825 7075
 Connection ~ 1950 7075
 Wire Wire Line
 	2175 7075 1950 7075
@@ -765,7 +763,7 @@ F 1 "100K" H 2020 5880 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1880 5925 50  0001 C CNN
 F 3 "~" H 1950 5925 50  0001 C CNN
 F 4 "Y" H 1950 5925 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "1000k" H 2125 5825 50  0000 C CNN "Spice_Model"
+F 5 "2000k" H 2125 5825 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1950 5925 50  0001 C CNN "Spice_Primitive"
 	1    1950 5925
 	1    0    0    -1  
@@ -779,7 +777,7 @@ F 1 "100K" H 1120 6755 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 980 6800 50  0001 C CNN
 F 3 "~" H 1050 6800 50  0001 C CNN
 F 4 "Y" H 1050 6800 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "40k" H 925 6750 50  0000 C CNN "Spice_Model"
+F 5 "80k" H 925 6750 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1050 6800 50  0001 C CNN "Spice_Primitive"
 	1    1050 6800
 	-1   0    0    1   
@@ -793,7 +791,7 @@ F 1 "100K" H 2020 6805 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1880 6850 50  0001 C CNN
 F 3 "~" H 1950 6850 50  0001 C CNN
 F 4 "Y" H 1950 6850 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "40k" H 2100 6800 50  0000 C CNN "Spice_Model"
+F 5 "80k" H 2100 6800 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1950 6850 50  0001 C CNN "Spice_Primitive"
 	1    1950 6850
 	1    0    0    -1  
@@ -807,7 +805,7 @@ F 1 "100K" H 1120 5430 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 980 5475 50  0001 C CNN
 F 3 "~" H 1050 5475 50  0001 C CNN
 F 4 "Y" H 1050 5475 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "28k" H 1200 5425 50  0000 C CNN "Spice_Model"
+F 5 "56k" H 1200 5425 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1050 5475 50  0001 C CNN "Spice_Primitive"
 	1    1050 5475
 	1    0    0    -1  
@@ -821,7 +819,7 @@ F 1 "100K" H 2020 5355 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1880 5400 50  0001 C CNN
 F 3 "~" H 1950 5400 50  0001 C CNN
 F 4 "Y" H 1950 5400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "28k" H 1800 5300 50  0000 C CNN "Spice_Model"
+F 5 "56k" H 1800 5300 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1950 5400 50  0001 C CNN "Spice_Primitive"
 	1    1950 5400
 	-1   0    0    1   
@@ -835,7 +833,7 @@ F 1 "100K" H 2020 6355 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1880 6400 50  0001 C CNN
 F 3 "~" H 1950 6400 50  0001 C CNN
 F 4 "Y" H 1950 6400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "20k" H 1800 6325 50  0000 C CNN "Spice_Model"
+F 5 "40k" H 1800 6325 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1950 6400 50  0001 C CNN "Spice_Primitive"
 	1    1950 6400
 	-1   0    0    1   
@@ -849,7 +847,7 @@ F 1 "100K" H 1120 6305 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 980 6350 50  0001 C CNN
 F 3 "~" H 1050 6350 50  0001 C CNN
 F 4 "Y" H 1050 6350 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "220k" H 900 6275 50  0000 C CNN "Spice_Model"
+F 5 "440k" H 900 6275 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1050 6350 50  0001 C CNN "Spice_Primitive"
 	1    1050 6350
 	-1   0    0    1   
@@ -1039,7 +1037,7 @@ F 1 "100K" H 1120 5855 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 980 5900 50  0001 C CNN
 F 3 "~" H 1050 5900 50  0001 C CNN
 F 4 "Y" H 1050 5900 50  0001 C CNN "Spice_Netlist_Enabled"
-F 5 "160k" H 1225 5850 50  0000 C CNN "Spice_Model"
+F 5 "320k" H 1275 5850 50  0000 C CNN "Spice_Model"
 F 6 "R" H 1050 5900 50  0001 C CNN "Spice_Primitive"
 	1    1050 5900
 	1    0    0    -1  
@@ -1065,11 +1063,11 @@ $EndComp
 Wire Wire Line
 	3325 3500 3525 3500
 Wire Notes Line
-	525  4450 2525 4450
+	525  4450 2650 4450
 Wire Notes Line
-	2525 4450 2525 7750
+	2650 4450 2650 7750
 Wire Notes Line
-	2525 7750 525  7750
+	2650 7750 525  7750
 Wire Notes Line
 	525  7750 525  4450
 Text Notes 1100 4550 0    50   ~ 0
@@ -1333,4 +1331,333 @@ F 6 "R" H 10600 4675 50  0001 C CNN "Spice_Primitive"
 	1    0    0    -1  
 $EndComp
 Connection ~ 10600 4525
+Wire Wire Line
+	2075 4850 2075 4800
+Wire Wire Line
+	2075 4800 2375 4800
+Wire Wire Line
+	2375 4800 2375 4850
+Connection ~ 2075 4800
+Wire Wire Line
+	2075 4800 2075 4775
+Wire Wire Line
+	2075 5175 2375 5175
+Wire Wire Line
+	2375 5175 2375 5150
+Connection ~ 2075 5175
+$Comp
+L Device:R R14
+U 1 1 5EC5B3CC
+P 2375 5000
+F 0 "R14" H 2445 5046 50  0000 L CNN
+F 1 "50K" H 2445 4955 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2305 5000 50  0001 C CNN
+F 3 "~" H 2375 5000 50  0001 C CNN
+F 4 "Y" H 2375 5000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "5k" H 2525 4950 50  0000 C CNN "Spice_Model"
+F 6 "R" H 2375 5000 50  0001 C CNN "Spice_Primitive"
+	1    2375 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5EC6E9D1
+P 1550 5000
+F 0 "R11" H 1620 5046 50  0000 L CNN
+F 1 "150K" H 1620 4955 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1480 5000 50  0001 C CNN
+F 3 "~" H 1550 5000 50  0001 C CNN
+F 4 "Y" H 1550 5000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "R" H 1550 5000 50  0001 C CNN "Spice_Primitive"
+F 6 "20k" H 1700 4975 50  0000 C CNN "Spice_Model"
+	1    1550 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 5175 1550 5175
+Wire Wire Line
+	1550 5175 1550 5150
+Connection ~ 1725 5175
+Wire Wire Line
+	1550 4850 1725 4850
+Wire Wire Line
+	1725 4750 1725 4850
+Connection ~ 1725 4850
+$Comp
+L Device:R R10
+U 1 1 5EC7E33C
+P 1325 5050
+F 0 "R10" H 1275 5250 50  0000 L CNN
+F 1 "100K" H 1395 5005 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1255 5050 50  0001 C CNN
+F 3 "~" H 1325 5050 50  0001 C CNN
+F 4 "Y" H 1325 5050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "5k" H 1350 5100 50  0000 C CNN "Spice_Model"
+F 6 "R" H 1325 5050 50  0001 C CNN "Spice_Primitive"
+	1    1325 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1175 5250 1325 5250
+Wire Wire Line
+	1325 5250 1325 5200
+Connection ~ 1175 5250
+Wire Wire Line
+	1325 4900 1175 4900
+$Comp
+L Device:R R9
+U 1 1 5EC89190
+P 675 5025
+F 0 "R9" H 600 5250 50  0000 L CNN
+F 1 "300K" H 745 4980 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 605 5025 50  0001 C CNN
+F 3 "~" H 675 5025 50  0001 C CNN
+F 4 "Y" H 675 5025 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "20k" H 725 5050 50  0000 C CNN "Spice_Model"
+F 6 "R" H 675 5025 50  0001 C CNN "Spice_Primitive"
+	1    675  5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	675  5175 850  5175
+Connection ~ 850  5175
+Wire Wire Line
+	675  4875 850  4875
+$Comp
+L Device:R R17
+U 1 1 5EC953E0
+P 875 5475
+F 0 "R17" H 700 5525 50  0000 L CNN
+F 1 "100K" H 945 5430 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 805 5475 50  0001 C CNN
+F 3 "~" H 875 5475 50  0001 C CNN
+F 4 "Y" H 875 5475 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "56k" H 750 5425 50  0000 C CNN "Spice_Model"
+F 6 "R" H 875 5475 50  0001 C CNN "Spice_Primitive"
+	1    875  5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	875  5325 1050 5325
+Connection ~ 1050 5325
+Wire Wire Line
+	875  5625 1050 5625
+Connection ~ 1050 5625
+$Comp
+L Device:R R18
+U 1 1 5ECA0C56
+P 900 5900
+F 0 "R18" H 700 5975 50  0000 L CNN
+F 1 "100K" H 970 5855 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 830 5900 50  0001 C CNN
+F 3 "~" H 900 5900 50  0001 C CNN
+F 4 "Y" H 900 5900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "320k" H 750 5875 50  0000 C CNN "Spice_Model"
+F 6 "R" H 900 5900 50  0001 C CNN "Spice_Primitive"
+	1    900  5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5750 1050 5750
+Connection ~ 1050 5750
+Wire Wire Line
+	900  6050 1050 6050
+Connection ~ 1050 6050
+$Comp
+L Device:R R27
+U 1 1 5EC4C361
+P 1700 5925
+F 0 "R27" H 1825 5900 50  0000 L CNN
+F 1 "100K" H 1770 5880 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1630 5925 50  0001 C CNN
+F 3 "~" H 1700 5925 50  0001 C CNN
+F 4 "Y" H 1700 5925 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "2000k" H 1875 5825 50  0000 C CNN "Spice_Model"
+F 6 "R" H 1700 5925 50  0001 C CNN "Spice_Primitive"
+	1    1700 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5775 1950 5775
+Connection ~ 1950 5775
+Wire Wire Line
+	1700 6075 1950 6075
+Connection ~ 1950 6075
+$Comp
+L Device:R R21
+U 1 1 5EC58B86
+P 1700 5400
+F 0 "R21" H 1500 5400 50  0000 L CNN
+F 1 "100K" H 1770 5355 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1630 5400 50  0001 C CNN
+F 3 "~" H 1700 5400 50  0001 C CNN
+F 4 "Y" H 1700 5400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "56k" H 1550 5300 50  0000 C CNN "Spice_Model"
+F 6 "R" H 1700 5400 50  0001 C CNN "Spice_Primitive"
+	1    1700 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 5250 1950 5250
+Connection ~ 1950 5250
+Wire Wire Line
+	1700 5550 1950 5550
+Connection ~ 1950 5550
+$Comp
+L Device:R R16
+U 1 1 5EC657C6
+P 850 6350
+F 0 "R16" H 650 6350 50  0000 L CNN
+F 1 "100K" H 920 6305 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 780 6350 50  0001 C CNN
+F 3 "~" H 850 6350 50  0001 C CNN
+F 4 "Y" H 850 6350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "440k" H 700 6275 50  0000 C CNN "Spice_Model"
+F 6 "R" H 850 6350 50  0001 C CNN "Spice_Primitive"
+	1    850  6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	850  6200 1050 6200
+Connection ~ 1050 6200
+Wire Wire Line
+	850  6500 1050 6500
+Connection ~ 1050 6500
+$Comp
+L Device:R R43
+U 1 1 5EC72B82
+P 2125 6400
+F 0 "R43" H 1925 6400 50  0000 L CNN
+F 1 "100K" H 2195 6355 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2055 6400 50  0001 C CNN
+F 3 "~" H 2125 6400 50  0001 C CNN
+F 4 "Y" H 2125 6400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "40k" H 1975 6325 50  0000 C CNN "Spice_Model"
+F 6 "R" H 2125 6400 50  0001 C CNN "Spice_Primitive"
+	1    2125 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2125 6250 1950 6250
+Connection ~ 1950 6250
+Wire Wire Line
+	2125 6550 1950 6550
+Connection ~ 1950 6550
+$Comp
+L Device:R R19
+U 1 1 5EC802C8
+P 1250 6800
+F 0 "R19" H 1050 6850 50  0000 L CNN
+F 1 "100K" H 1320 6755 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1180 6800 50  0001 C CNN
+F 3 "~" H 1250 6800 50  0001 C CNN
+F 4 "Y" H 1250 6800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "80k" H 1125 6750 50  0000 C CNN "Spice_Model"
+F 6 "R" H 1250 6800 50  0001 C CNN "Spice_Primitive"
+	1    1250 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 6650 1050 6650
+Connection ~ 1050 6650
+Wire Wire Line
+	1250 6950 1050 6950
+Connection ~ 1050 6950
+$Comp
+L Device:R R44
+U 1 1 5EC8DE4A
+P 2125 6850
+F 0 "R44" H 2195 6896 50  0000 L CNN
+F 1 "100K" H 2195 6805 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2055 6850 50  0001 C CNN
+F 3 "~" H 2125 6850 50  0001 C CNN
+F 4 "Y" H 2125 6850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "80k" H 2275 6800 50  0000 C CNN "Spice_Model"
+F 6 "R" H 2125 6850 50  0001 C CNN "Spice_Primitive"
+	1    2125 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 6700 1950 6700
+Connection ~ 1950 6700
+Wire Wire Line
+	2125 7000 1950 7000
+Connection ~ 1950 7000
+$Comp
+L Device:R R15
+U 1 1 5ECA29FB
+P 675 7175
+F 0 "R15" H 745 7221 50  0000 L CNN
+F 1 "50k" H 745 7130 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 605 7175 50  0001 C CNN
+F 3 "~" H 675 7175 50  0001 C CNN
+F 4 "Y" H 675 7175 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "5k" H 825 7125 50  0000 C CNN "Spice_Model"
+F 6 "R" H 675 7175 50  0001 C CNN "Spice_Primitive"
+	1    675  7175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	675  7025 875  7025
+Connection ~ 875  7025
+Wire Wire Line
+	675  7325 875  7325
+$Comp
+L Device:R R20
+U 1 1 5ECB0D59
+P 1400 7175
+F 0 "R20" H 1200 7250 50  0000 L CNN
+F 1 "150k" H 1470 7130 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1330 7175 50  0001 C CNN
+F 3 "~" H 1400 7175 50  0001 C CNN
+F 4 "Y" H 1400 7175 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "20K" H 1275 7125 50  0000 C CNN "Spice_Model"
+F 6 "R" H 1400 7175 50  0001 C CNN "Spice_Primitive"
+	1    1400 7175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 7025 1400 7025
+Connection ~ 1250 7025
+Wire Wire Line
+	1250 7325 1400 7325
+$Comp
+L Device:R R28
+U 1 1 5ECBF7BB
+P 1825 7225
+F 0 "R28" H 1895 7271 50  0000 L CNN
+F 1 "50K" H 1895 7180 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1755 7225 50  0001 C CNN
+F 3 "~" H 1825 7225 50  0001 C CNN
+F 4 "Y" H 1825 7225 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "5k" H 1975 7175 50  0000 C CNN "Spice_Model"
+F 6 "R" H 1825 7225 50  0001 C CNN "Spice_Primitive"
+	1    1825 7225
+	1    0    0    -1  
+$EndComp
+Connection ~ 1825 7075
+Wire Wire Line
+	1825 7075 1700 7075
+Wire Wire Line
+	1825 7375 1700 7375
+Connection ~ 1700 7375
+$Comp
+L Device:R R45
+U 1 1 5ECC7129
+P 2325 7225
+F 0 "R45" H 2125 7300 50  0000 L CNN
+F 1 "150K" H 2395 7180 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2255 7225 50  0001 C CNN
+F 3 "~" H 2325 7225 50  0001 C CNN
+F 4 "Y" H 2325 7225 50  0001 C CNN "Spice_Netlist_Enabled"
+F 5 "R" H 2325 7225 50  0001 C CNN "Spice_Primitive"
+F 6 "20k" H 2200 7200 50  0000 C CNN "Spice_Model"
+	1    2325 7225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2325 7075 2175 7075
+Connection ~ 2175 7075
+Wire Wire Line
+	2325 7375 2175 7375
 $EndSCHEMATC
