@@ -404,4 +404,6 @@ Wire Wire Line
 Connection ~ 3475 4875
 Wire Wire Line
 	3475 4875 3800 4875
+Text Notes 2450 3600 0    50   ~ 0
+R3_6=1/(1/R3+1/R6)\nR2_4=1/(1/R2+1/R4)\nf=R3_6/R2_4\nV_Out = 1.25V ( 1+f)\n             + I_adj*R3_6)
 $EndSCHEMATC
