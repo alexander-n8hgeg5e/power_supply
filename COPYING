@@ -1,0 +1,17 @@
+licenses:
+
+*.lib files and *.pretty files ->  CC-BY-SA-4.0
+
+everything what is not already under a license
+as it is licensed with the kicad distribution,
+and what is created by me,
+is GPL-3 licensed by me.
+What is from the kicad distribution is licensed
+as it already is.
+
+The kicad distribution is obtainable here:
+http://www.kicad-pcb.org
+https://kicad.github.io/packages3d/
+https://kicad.github.io/symbols/
+https://github.com/kicad/kicad-templates
+https://kicad.github.io/footprints/
